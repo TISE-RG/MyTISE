@@ -4,7 +4,7 @@ Since you define knowledge as **"power conversion to do work (moving a load from
 
 Here are the three specific types of knowledge maps suitable for this "Transformation + PUDAL" smart system:
 
-### 1. The Cybernetic Block Diagram (The System Map)
+## 1. The Cybernetic Block Diagram (The System Map)
 This is the foundational map for your definition. It visualizes the separation and interaction between the **Control Unit** and the **Transformation Engine**.
 
 *   **Structure:** Two distinct boxes (Controller and Plant) connected by a loop.
@@ -16,7 +16,7 @@ This is the foundational map for your definition. It visualizes the separation a
         *   **Feedback:** An arrow from the Engine back to PUDAL labeled **"Error Signal"** or **"Sensor Data"** (This is the [P]erception phase).
 *   **Why it fits:** It explicitly shows how the PUDAL cycle "adapts the engine." The knowledge here is represented as the *relationship* between the command sent and the result achieved.
 
-### 2. The Bond Graph (The Energy/Transformation Map)
+## 2. The Bond Graph (The Energy/Transformation Map)
 Since you defined knowledge as "power conversion," the **Bond Graph** is the scientifically correct mapping tool. Bond graphs are used in engineering to model how energy flows between different physical domains (mechanical, electrical, hydraulic).
 
 *   **Structure:** Instead of boxes, you use "bonds" (lines) that carry two variables: **Effort** (Force/Voltage) and **Flow** (Velocity/Current).
@@ -27,7 +27,7 @@ Since you defined knowledge as "power conversion," the **Bond Graph** is the sci
     *   **Junctions:** Points where the PUDAL cycle intervenes to throttle the flow (changing resistance or capacity).
 *   **Why it fits:** It treats knowledge as a physical quantity. It visualizes *inefficiency*. If the PUDAL unit perceives [P] that the engine is overheating (wasting energy), it modifies the [D]esign to reduce flow. The map shows exactly where energy is lost vs. where work is done.
 
-### 3. The State-Space Landscape (The "Work" Map)
+## 3. The State-Space Landscape (The "Work" Map)
 You defined the goal as "moving a load from existing position to desired position." The best visualization for this is a **State-Space Map** (or Phase Plane).
 
 *   **Structure:** A topological map (like a terrain map) or a multi-dimensional graph.
@@ -43,7 +43,7 @@ You defined the goal as "moving a load from existing position to desired positio
     *   **[A]ction:** The actual movement of the point on the graph.
     *   **[L]earning:** Re-drawing the map if you hit an unexpected obstacle (updating the terrain model).
 
-### Summary: Which one creates the "Smart System"?
+## Summary: Which one creates the "Smart System"?
 
 To fully model your description, you need a **composite map**:
 

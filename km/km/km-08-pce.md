@@ -1,3 +1,7 @@
+# the Core Engines
+
+Every PUDAL element should be supported by 'core engine', a language based knowledge processing to enhance its reasoning capacity. They could be smart agents capable of language or propmt interactions. For example they could be Perception core engine specialized in Image or Video perception. Optimizing core engine in Decision making, and so on. Acting core engine encapsules the transformation engine. these CORE ENGINES are agents or specialized knowledge processing units that work together to implement the PUDAL cycle using language as the primary medium of knowledge representation and processing.
+
 This is a cutting-edge architectural concept. You are describing a **Multi-Agent System (MAS)** where the "Operating System" is Natural Language, and the "Hardware Drivers" are Specialized AI Models (Core Engines).
 
 In this architecture, **Language acts as the universal connector** (the API) between the PUDAL steps.
@@ -6,13 +10,13 @@ Here is the Knowledge Map for a **Language-Driven PUDAL System** with specialize
 
 ---
 
-### 1. The Architecture: The "Blackboard" Knowledge Map
+## 1. The Architecture: The "Blackboard" Knowledge Map
 To visualize this, imagine a central digital whiteboard (The Context Window) surrounded by 5 specialized "Smart Agents" (The Core Engines).
 
 **The Central Data Stream:**
 Instead of raw signals, the system shares **Structured Prompts** (ABCD format).
 
-#### A. The Perception Core Engine ($CE_P$)
+### A. The Perception Core Engine ($CE_P$)
 *   **Specialization:** **Multi-Modal-to-Text (Vision Transformers / Audio Analysis).**
 *   **Input:** Raw Sensory Energon (Pixels from cameras, Audio waves, Lidar points).
 *   **Function:** It converts physical signals into a **Descriptive [C]ondition Statement**.
@@ -20,7 +24,7 @@ Instead of raw signals, the system shares **Structured Prompts** (ABCD format).
 *   **ABCD Output:**
     > "I see a wet floor [C1] and a 50kg load [C2]."
 
-#### B. The Understanding Core Engine ($CE_U$)
+### B. The Understanding Core Engine ($CE_U$)
 *   **Specialization:** **Semantic Search & Retrieval (RAG - Retrieval Augmented Generation).**
 *   **Input:** The text description from Perception.
 *   **Function:** It queries the "Long-Term Memory" (Vector Database) to find historical ABCD rules that apply to this condition.
@@ -28,7 +32,7 @@ Instead of raw signals, the system shares **Structured Prompts** (ABCD format).
 *   **ABCD Output:**
     > "Retrieving Rule #402: Given Wet Floor [C], Actor [A] usually reduces speed [B] to avoid slippage."
 
-#### C. The Decision Core Engine ($CE_D$)
+### C. The Decision Core Engine ($CE_D$)
 *   **Specialization:** **Reasoning & Optimization (Chain-of-Thought / Monte Carlo Tree Search).**
 *   **Input:** The retrieved rules from Understanding.
 *   **Function:** It simulates different scenarios in text form to optimize the **[D]egree**. It is the "Prompt Engineer" of the plan.
@@ -36,7 +40,7 @@ Instead of raw signals, the system shares **Structured Prompts** (ABCD format).
 *   **ABCD Output:**
     > "Simulation Result: If Speed > 50%, Slip Risk = High. Therefore, Decision is: Set Speed to 30% [D]."
 
-#### D. The Acting Core Engine ($CE_A$)
+### D. The Acting Core Engine ($CE_A$)
 *   **Specialization:** **Code Generation & Tool Use (Function Calling).**
 *   **Input:** The finalized plan from Decision.
 *   **Function:** This is the **Wrapper** for the physical Transformation Engine. It translates the English plan into Machine Code (Python/C++/G-Code) to drive the motors.
@@ -44,7 +48,7 @@ Instead of raw signals, the system shares **Structured Prompts** (ABCD format).
 *   **ABCD Output:**
     > `function_call: motor_controller.set_rpm(300)` (This releases the Energon to do the work).
 
-#### E. The Learning Core Engine ($CE_L$)
+### E. The Learning Core Engine ($CE_L$)
 *   **Specialization:** **Criticism & Fine-Tuning (Reflexion Models).**
 *   **Input:** The intended [D]egree vs. the Actual Result.
 *   **Function:** It analyzes the discrepancy and updates the text prompts or the Vector Database.
@@ -54,7 +58,7 @@ Instead of raw signals, the system shares **Structured Prompts** (ABCD format).
 
 ---
 
-### 2. The Interaction Map: "Prompt Chaining"
+## 2. The Interaction Map: "Prompt Chaining"
 
 In this map, Knowledge is represented as a **Conversation** between the Core Engines.
 
@@ -76,7 +80,7 @@ In this map, Knowledge is represented as a **Conversation** between the Core Eng
 
 ---
 
-### 3. How to Build This Map practically?
+## 3. How to Build This Map practically?
 
 To implement this "Smart System," your Knowledge Map is actually a **System Architecture Diagram** containing:
 
@@ -88,7 +92,7 @@ To implement this "Smart System," your Knowledge Map is actually a **System Arch
 3.  **The Meta-Prompts:** Each Core Engine has a "System Prompt" defining its personality.
     *   *Example for $CE_D$:* "You are a cautious strategist. You prioritize safety over speed. Output only valid ABCD configurations."
 
-### Summary
+## Summary
 
 In this specialized map:
 *   **Energon** is the raw fuel.

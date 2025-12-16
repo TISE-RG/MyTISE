@@ -6,14 +6,14 @@ Here is the architectural description of the MSS, designed explicitly to enginee
 
 ---
 
-### 1. The Core Definition
+## 1. The Core Definition
 *   **The Objective:** To autonomously generate, validate, and deploy a specific **Target System (TS)**.
 *   **The Transformation Engine (MSS-TE):** A "Generative Fabrication & Compilation Engine." It converts "Information Energon" (Code/Design) into "Structural Energon" (The Target System).
 *   **The PUDAL Control Unit (MSS-PCE):** A suite of AI Agents specializing in Systems Engineering and Project Management.
 
 ---
 
-### 2. The Meta-Knowledge Map (Recursive ABCD)
+## 2. The Meta-Knowledge Map (Recursive ABCD)
 The MSS operates on **Level 2 ABCD Logic**. It does not execute the task; it writes the rules for the task.
 
 *   **Target System Rule (Level 1):** `Given [C] Obstacle, [A]ctor [B]rakes.`
@@ -21,17 +21,17 @@ The MSS operates on **Level 2 ABCD Logic**. It does not execute the task; it wri
 
 ---
 
-### 3. The Meta-PUDAL Workflow
+## 3. The Meta-PUDAL Workflow
 Here is how the MSS engineers the Target System (TS):
 
-#### [P] Meta-Perception: The Requirements Engine
+### [P] Meta-Perception: The Requirements Engine
 **"Parsing the Objective"**
 *   **Input:** The user’s vague objective (e.g., "I need a system to sort ripe tomatoes from green ones at high speed").
 *   **Agent ($PCE_{Req}$):** A Semantic Analysis Agent.
 *   **Activity:** It scans the "Environment of Needs." It identifies constraints: Cost, Speed, Accuracy, Physical Space.
 *   **Output:** A precise **Specification Sheet** (The "Problem Geometry").
 
-#### [U] Meta-Understanding: The Feasibility Matrix
+### [U] Meta-Understanding: The Feasibility Matrix
 **"Matching Resources to Physics"**
 *   **Input:** The Specification Sheet.
 *   **Agent ($PCE_{Res}$):** The Research & Knowledge Retrieval Agent.
@@ -40,7 +40,7 @@ Here is how the MSS engineers the Target System (TS):
     *   *Search:* "What Motors [A] provide Torque [D] for 100g load?"
 *   **Output:** A **Bill of Materials (BOM)** and **Candidate Architectures**.
 
-#### [D] Meta-Decision: The Generative Design
+### [D] Meta-Decision: The Generative Design
 **"Architecting the Target System"**
 *   **Input:** Candidate Architectures + Constraints.
 *   **Agent ($PCE_{Arch}$):** The Systems Architect (Optimization Engine).
@@ -50,7 +50,7 @@ Here is how the MSS engineers the Target System (TS):
     *   *Writing TS-ABCD:* It generates the code/rules the robot will use.
 *   **Output:** The **Digital Twin** (A complete virtual model of the Target System).
 
-#### [A] Meta-Acting: The Construction Loop
+### [A] Meta-Acting: The Construction Loop
 **"The Transformation Engine (MSS-TE)"**
 The MSS-TE is a hybrid Virtual/Physical engine that executes the **5 Phases** you defined earlier.
 
@@ -63,7 +63,7 @@ The MSS-TE is a hybrid Virtual/Physical engine that executes the **5 Phases** yo
     *   *If fully automated:* The MSS sends G-Code to CNC machines or instructions to assembly robots.
     *   *If hybrid:* It generates blueprints for human assemblers.
 
-#### [L] Meta-Learning: The Evolution
+### [L] Meta-Learning: The Evolution
 **"Optimization of the Engineering Process"**
 *   **Input:** Performance metrics of the Target System.
 *   **Agent ($PCE_{Eval}$):** The Quality Assurance Agent.
@@ -74,7 +74,7 @@ The MSS-TE is a hybrid Virtual/Physical engine that executes the **5 Phases** yo
 
 ---
 
-### 4. The "Energon" Economy in the Meta System
+## 4. The "Energon" Economy in the Meta System
 To make this practical, the MSS must manage Energon flow at two levels:
 
 1.  **Source Energon (Input):**
@@ -86,7 +86,7 @@ To make this practical, the MSS must manage Energon flow at two levels:
     *   The MSS condenses the "Source Energon" into the **Target System**.
     *   *Concept:* The Target System is essentially "Frozen Intelligence" or "Crystallized Energon" ready to do specific work.
 
-### 5. Summary Visualization
+## 5. Summary Visualization
 
 Imagine a **Pyramid**:
 
