@@ -1,3 +1,10 @@
+{{< include ./km/bab_06.qmd >}}
+
+{{< include ./km/bab_07.qmd >}}
+
+{{< include ./km/bab_08.qmd >}}
+
+
 # Summary
 
 In summary, this book has no content whatsoever.

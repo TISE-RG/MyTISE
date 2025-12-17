@@ -1,4 +1,4 @@
-# **BAB 1: DARI IDE MENJADI INTELIGENSI: EVOLUSI PETA PENGETAHUAN**
+# BAB 1: DARI IDE MENJADI INTELIGENSI: EVOLUSI PETA PENGETAHUAN
 
 Bab ini berfungsi sebagai fondasi untuk memahami bagaimana representasi pengetahuan, yang secara tradisional digunakan sebagai alat bantu berpikir manusia, dapat diekstraksi dan diformalkan menjadi mesin logika yang dapat dieksekusi oleh sistem cerdas.
 
