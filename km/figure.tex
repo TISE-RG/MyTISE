@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption} % Optional: For more caption control
+\usepackage{float}   % Optional: For the [H] positioning option
+
+\begin{document}
+
+Here is some text before the floating figure. LaTeX will place the figure in a suitable location, which might be on this page or a subsequent one.
+
+\begin{figure}[htb] % [htb] suggests placing it 'here', 'top', or 'bottom'
+    \centering
+    % Use the 'page' option to specify which page to include
+    \includegraphics[width=\textwidth, page=3]{BinderKMs.pdf}
+    \caption{This is a caption for the third page of the external PDF file.}
+    \label{fig:externalpdfpage}
+\end{figure}
+
+More text after the figure. You can reference the figure using its label, like Figure \ref{fig:externalpdfpage}.
+
+\end{document}
