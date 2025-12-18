@@ -231,4 +231,146 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2
+
+] (./main.toc)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [1
+
+] [2
+
+]
+Chapter 1.
+
+Overfull \hbox (1.22101pt too wide) in paragraph at lines 24--25
+\T1/cmr/m/n/10 Bab ini mele-takkan fon-dasi bagi pemetaan penge-tahuan, men-je-
+laskan bagaimana
+ []
+
+
+Overfull \hbox (7.49725pt too wide) in paragraph at lines 30--31
+\T1/cmr/m/n/10 Peta penge-tahuan meru-pakan cara yang kuat un-tuk memvi-su-al-i
+sas-ikan bagaimana
+ []
+
+
+
+pdfTeX warning: pdflatex.exe (file ../BinderKM.pdf): PDF inclusion: found PDF v
+ersion <1.6>, but at most version <1.5> allowed
+<../BinderKM.pdf, id=20, page=1, 1381.16pt x 770.88pt>
+File: ../BinderKM.pdf Graphic file (type pdf)
+<use ../BinderKM.pdf, page 1>
+Package pdftex.def Info: ../BinderKM.pdf , page1 used on input line 34.
+(pdftex.def)             Requested size: 276.00105pt x 154.04387pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (703.39171pt too wide) in paragraph at lines 44--53
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1
+
+]
+Overfull \hbox (10.24577pt too wide) in paragraph at lines 61--62
+[]\T1/cmr/bx/n/10 Membangun Struk-turnya (*Ar-range and Struc-ture*): \T1/cmr/m
+/n/10 Me-mindahkan
+ []
+
+
+Overfull \hbox (52.16605pt too wide) has occurred while \output is active
+\T1/cmr/m/n/10 2 \T1/cmr/m/sl/10 CHAPTER 1.  DARI IDE MENJADI INTELIGENSI: EVOL
+USI PETA PENGETAHUAN
+ []
+
+[2 <../BinderKM.pdf>] [3]
+Overfull \hbox (52.16605pt too wide) has occurred while \output is active
+\T1/cmr/m/n/10 4 \T1/cmr/m/sl/10 CHAPTER 1.  DARI IDE MENJADI INTELIGENSI: EVOL
+USI PETA PENGETAHUAN
+ []
+
+[4
+
+]
+Chapter 2.
+
+Overfull \hbox (0.99884pt too wide) in paragraph at lines 71--72
+\T1/cmr/m/n/10 Taksonomi Bloom mengkat-e-gorikan keter-ampi-lan kog-ni-tif men-
+jadi enam tingkat,
+ []
+
+
+Overfull \hbox (20.09796pt too wide) in paragraph at lines 82--82
+[]\T1/cmr/bx/n/14.4 Struktur Peta un-tuk Merep-re-sen-tasikan Kedala-
+ []
+
+[5]
+Overfull \hbox (1.22417pt too wide) in paragraph at lines 85--85
+[]\T1/cmr/bx/n/14.4 Menerjemahkan Tingkat Kog-ni-tif men-jadi El-
+ []
+
+! Misplaced \noalign.
+\toprule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
+l.90     \toprule
+                 
+? 
+! Emergency stop.
+\toprule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
+l.90     \toprule
+                 
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 3637 strings out of 476025
+ 55051 string characters out of 5794014
+ 1857382 words of memory out of 5000000
+ 24033 multiletter control sequences out of 15000+600000
+ 527160 words of font info for 69 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,8n,67p,496b,267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
