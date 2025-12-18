@@ -8,8 +8,8 @@
 \begin_preamble
 \usepackage{pdfpages}
 \usepackage{graphicx}
-\usepackage{caption}
-\usepackage{float}
+%\usepackage{caption}
+%\usepackage{float}
 \end_preamble
 \use_default_options true
 \begin_removed_modules
@@ -161,7 +161,7 @@ textwidth,page=1]{BinderKM.pdf}
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Peta-Pengetahuan"
+name "fig:BinderKM"
 
 \end_inset
 
@@ -173,7 +173,109 @@ Peta Pengetahuan
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Peta
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth,page=1]{BinderKM.pdf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BinderKM-1"
+
+\end_inset
+
+Peta Pengetahuan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth,page=2]{BinderKM.pdf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BinderKM-2"
+
+\end_inset
+
+Peta Pengetahuan
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
