@@ -1,0 +1,22 @@
+project:
+  type: book
+
+book:
+  title: "Peta Pengetahuan Untuk Rekayasa Cerdas Sistem"
+  author: "Armein  Z. R. Langi"
+  date: "12/17/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  pdf:
+    documentclass: memoir
+    lang: id
+
+
+

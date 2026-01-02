@@ -1,4 +1,4 @@
-# the Core Engines
+# The Core Engines
 
 Every PUDAL element should be supported by 'core engine', a language based knowledge processing to enhance its reasoning capacity. They could be smart agents capable of language or propmt interactions. For example they could be Perception core engine specialized in Image or Video perception. Optimizing core engine in Decision making, and so on. Acting core engine encapsules the transformation engine. these CORE ENGINES are agents or specialized knowledge processing units that work together to implement the PUDAL cycle using language as the primary medium of knowledge representation and processing.
 
