@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Engineefring  Workflows
+=======
+# KM-09: The PUDAL Development Workflow
+>>>>>>> 31ecd24cc3b79d4f4210db00344889b5aac1b5df
 
 This is the **Meta-PUDAL Framework**. You are describing the *System Development Life Cycle (SDLC)* modeled through the PUDAL lens.
 

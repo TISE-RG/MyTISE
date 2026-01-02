@@ -1,0 +1,64 @@
+# **BAB 7: ARSITEKTUR MESIN INTI PUDAL (*PUDAL CORE ENGINES*)**
+
+Bab ini membahas implementasi praktis dari siklus kognitif PUDAL (Persepsi, Pemahaman, Keputusan, Tindakan, Pembelajaran) dalam arsitektur sistem cerdas modern. Implementasi ini diwujudkan melalui Arsitektur Sistem *Multi-Agent* yang memanfaatkan bahasa alamiah (*Natural Language*) sebagai medium komunikasi dan pemrosesan utama.
+
+---
+
+## 7.1 Konteks Bersama (Bahasa) sebagai Konektor Universal (API)
+
+Dalam arsitektur kognitif modern, siklus PUDAL dihidupkan melalui arsitektur Sistem *Multi-Agent* (MAS),. Setiap elemen dalam siklus PUDAL didukung oleh unit pemrosesan pengetahuan khusus yang disebut **Mesin Inti (*Core Engine*)**.
+
+Dalam sistem ini, **Bahasa Alamiah** bertindak sebagai konektor universal, atau *Application Programming Interface* (API), di antara setiap langkah PUDAL,. Alih-alih bertukar sinyal mentah atau data terstruktur biner, sistem ini berbagi **Prompt Terstruktur** (yang pada dasarnya adalah pernyataan ABCD) sebagai aliran data sentral.
+
+Mesin Inti ini bekerja bersama di sekitar **Konteks Bersama** (yang divisualisasikan sebagai papan tulis digital atau memori bersama), mengubah sinyal mentah menjadi tindakan yang terkoordinasi melalui serangkaian bahasa terstruktur,.
+
+**Usulan Gambar 7.1: Arsitektur PUDAL Berbasis Bahasa dengan Mesin Inti**
+
+| Placeholder Gambar | Caption | Sumber |
+| :--- | :--- | :--- |
+| **Gambar 7.1** | Diagram blok yang menunjukkan Kotak **Konteks Bersama (Bahasa)** sebagai pusat memori, dikelilingi oleh lima Mesin Inti PUDAL yang saling berinteraksi: Mesin Persepsi, Mesin Pemahaman, Mesin Keputusan, Mesin Tindakan, dan Mesin Pembelajaran. Arus informasi ditunjukkan dengan panah dua arah.|
+
+## 7.2 Peran dan Spesialisasi Lima Mesin Inti
+
+Lima Mesin Inti (PUDAL Core Engines/PCE) adalah agen cerdas terspesialisasi yang bekerja dalam alur kerja kognitif untuk melaksanakan siklus PUDAL:
+
+**Tabel 7.1: Peran dan Spesialisasi Lima Mesin Inti PUDAL (PCE)**
+
+| Mesin Inti | Singkatan | Spesialisasi Utama | Fungsi Pemetaan Kognitif | Output Utama (Bahasa/Aksi) | Sumber |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Persepsi** | $CE_P$ | Multi-Modal-to-Text | Mengubah Energon Sensorik mentah (piksel, audio) menjadi Deskripsi Kondisi \[C] Teks (misalnya, *Image Captioning*),. | Pernyataan Kondisi \[C] Deskriptif (Teks). |, |
+| **Pemahaman** | $CE_U$ | *Retrieval Augmented Generation* (RAG) | Mengueri "Memori Jangka Panjang" (Pustaka ABCD) untuk mencari aturan yang relevan dengan konteks yang dirasakan,. | Aturan dan konteks yang relevan dari pustaka. |, |
+| **Keputusan** | $CE_D$ | Penalaran & Optimasi (*Chain-of-Thought*) | Mensintesis aturan yang diambil untuk merumuskan rencana tindakan yang dioptimalkan dan menentukan Derajat \[D] yang tepat,. | Rencana Tindakan Terakhir (misalnya, *Set Speed to 30%* \[D]). |, |
+| **Tindakan** | $CE_A$ | Pembuatan Kode & Penggunaan *Tool* (*Function Calling*) | **Jembatan Kritis** antara Logika Bahasa dan Fisika, menerjemahkan rencana teks menjadi Kode Mesin untuk menggerakkan Mesin Transformasi,,. | Panggilan Fungsi (misalnya, `motor_controller.set_rpm(300)`). |,, |
+| **Pembelajaran** | $CE_L$ | Kritik & Penalaan Halus (*Self-Correction*) | Menganalisis ketidaksesuaian antara hasil aktual dan yang dimaksudkan untuk memperbarui Prompt atau parameter ABCD,. | Pembaruan Aturan atau Skor Keandalan. |, |
+
+Perlu ditekankan bahwa **Mesin Tindakan ($CE_A$) adalah jembatan kritis**—satu-satunya yang berkomunikasi dalam **Bahasa** (dengan Mesin Keputusan) dan dalam **Fisika** (dengan Mesin Transformasi).
+
+## 7.3 Representasi Pengetahuan sebagai Rantai *Prompt* (*Prompt Chaining*)
+
+Dalam arsitektur *Multi-Agent* ini, pengetahuan tidak mengalir secara pasif, melainkan beroperasi sebagai **Rantai *Prompt***, sebuah "percakapan" yang terstruktur di antara Mesin Inti,.
+
+**Studi Kasus: Bot Pengiriman Otonom bereaksi terhadap rintangan**,
+
+1.  **Langkah $CE_P$ (Persepsi):** $CE_P$ memproses *video feed* dan mengubahnya menjadi Prompt Output berupa JSON yang terstruktur, misalnya: `{ "Condition": "Rintangan terdeteksi", "Type": "Human", "Distance": "2 meters" }`.
+2.  **Langkah $CE_U$ (Pemahaman):** $CE_U$ membaca JSON tersebut dan mencari Pustaka Pengetahuan untuk konteks, menghasilkan Prompt Output: *“Protokol Keselamatan Alpha mengharuskan menjaga jarak 1 meter. Aktor 'Bot' harus Berhenti atau Menghindar.”*.
+3.  **Langkah $CE_D$ (Keputusan):** $CE_D$ memproses konteks dan menggunakan penalaran internal (analisis risiko: Kecepatan vs. Keselamatan) untuk merumuskan strategi, menghasilkan Prompt Output: *“Perintah: Mulai perilaku 'Berhenti' [B]. Derajat: Segera [D].”*.
+4.  **Langkah $CE_A$ (Tindakan):** $CE_A$ menerima perintah bahasa ("Segera") dan menerjemahkannya menjadi aksi fisik yang ditujukan pada Mesin Transformasi: `Aksi: Mengubah Derajat segera menjadi Tekanan_Rem = 100%`.
+5.  **Langkah $CE_L$ (Pembelajaran):** $CE_L$ menganalisis hasil (misalnya, "Stabilitas sempurna pada kecepatan 0"), menghasilkan Prompt Output yang memperbarui pengetahuan sistem: *“Observasi: Update skor keandalan Protokol Alpha menjadi Tinggi.”*.
+
+## 7.4 Anatomi Lengkap Entitas Kognitif: Integrasi PUDAL Kontroler, Lima Mesin Inti, dan Mesin Transformasi
+
+Arsitektur ini mencapai definisi lengkap Entitas Kognitif, mengintegrasikan siklus kognitif (PUDAL), mesin fisik (Mesin Transformasi), dan bahan bakar universal (Energon) dalam satu kerangka kerja tunggal,.
+
+**Kontroler PUDAL** (berisi Lima Mesin Inti) beroperasi sebagai otak perangkat lunak:
+*   Kontroler menerima input dalam bentuk **Energon Struktural, Dimensional, dan Direktif**.
+*   Kontroler memproses Energon ini melalui siklus PUDAL yang digerakkan oleh Mesin Inti, dan mengirimkan **Perintah (*Command*)** (hasil dari $CE_A$) ke **Mesin Transformasi**.
+*   Mesin Transformasi (unit fisik) melakukan kerja dan mengirimkan **Data Sensor** (input bagi $CE_P$) kembali ke Kontroler.
+
+Dengan memadukan siberetika, termodinamika, dan arsitektur AI modern, sistem yang direkayasa bergerak melampaui mesin yang melakukan tugas, menjadi entitas yang berpikir, beradaptasi, dan belajar.
+
+**Usulan Gambar 7.2: Anatomi Lengkap Entitas Kognitif yang Terintegrasi**
+
+| Placeholder Gambar | Caption | Sumber |
+| :--- | :--- | :--- |
+| **Gambar 7.2** | Diagram kotak sentral yang besar (Kontroler PUDAL) yang berisi lingkaran Lima Mesin Inti. Tiga panah besar dari kiri berlabel **Energon Struktural, Dimensional, dan Direktif** mengalir ke Kontroler. Dari sisi kanan Kontroler, panah **Command** mengalir ke **Mesin Transformasi** (kotak Plant), dan panah **Sensor** kembali ke Kontroler, menunjukkan integrasi total.|

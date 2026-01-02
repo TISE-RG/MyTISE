@@ -1,0 +1,75 @@
+# **BAB 2: MEMETAKAN KEDALAMAN KOGNITIF DENGAN TAKSONOMI BLOOM**
+
+Setelah pengetahuan berhasil distrukturkan dari daftar ide menjadi peta yang kohesif (Bab 1), tantangan berikutnya adalah memetakan kedalaman pemahaman—seberapa dalam sistem, baik manusia maupun cerdas, memproses informasi tersebut. Bab ini menggunakan **Taksonomi Bloom** sebagai kerangka kerja untuk menilai kedalaman kognitif yang diperlukan untuk rekayasa sistem cerdas adaptif.
+
+
+## 2.1 Taksonomi Bloom: Enam Tingkat Kedalaman Kognitif
+
+**Taksonomi Bloom** adalah kerangka penting yang mengkategorikan keterampilan kognitif menjadi enam tingkat yang berbeda, bergerak dari pemikiran tingkat rendah (LOTS) ke pemikiran tingkat tinggi (HOTS). Dalam konteks rekayasa sistem cerdas, sistem yang benar-benar cerdas harus mampu mencapai tingkat kognitif tertinggi, yaitu Mencipta dan Mengevaluasi.
+
+Enam tingkatan tersebut didefinisikan sebagai:
+
+1.  **Mengingat (*Remembering*):** Kemampuan untuk mengingat kembali fakta dan konsep dasar.
+2.  **Memahami (*Understanding*):** Kemampuan untuk menjelaskan ide atau konsep.
+3.  **Mengaplikasikan (*Applying*):** Kemampuan untuk menggunakan informasi yang dimiliki dalam situasi baru.
+4.  **Menganalisis (*Analyzing*):** Kemampuan untuk menarik hubungan di antara ide-ide yang berbeda, mencari pola, dan menentukan sebab-akibat.
+5.  **Mengevaluasi (*Evaluating*):** Kemampuan untuk membenarkan suatu keputusan atau arah tindakan, dengan mempertimbangkan kualitas dan validitas.
+6.  **Mencipta (*Creating*):** Kemampuan untuk menghasilkan karya baru atau orisinal, atau merumuskan model/hipotesis baru.
+
+## 2.2 Struktur Peta untuk Merepresentasikan Kedalaman
+
+Untuk merepresentasikan keenam tingkat kognitif ini dalam bentuk peta pengetahuan, peta pikiran radial sederhana tidak memadai karena cenderung meratakan informasi menjadi satu lapisan kepentingan.
+
+Jenis peta spesifik yang paling efektif untuk merefleksikan Taksonomi Bloom adalah **Peta Konsep Hierarkis** (atau *Layered Knowledge Graph*). Struktur ini diorganisasikan secara vertikal atau konsentris, memungkinkan representasi kedalaman secara visual. Peta harus bergerak dari fakta konkret di bagian bawah (atau pusat) menuju koneksi abstrak dan kreasi di bagian atas (atau tepi luar).
+
+Peta Konsep Hierarkis secara khusus dipilih karena memungkinkan pergerakan logis dari fakta dasar ke kreasi abstrak, dengan setiap langkah kedalaman kognitif dicerminkan oleh fitur pemetaan yang semakin kompleks.
+
+**Usulan Gambar 2.1: Representasi Taksonomi Bloom dalam Bentuk Piramida Kognitif**
+
+| Placeholder Gambar | Caption | Sumber |
+| :--- | :--- | :--- |
+| **Gambar 2.1** | Diagram piramida (atau kerucut) yang menampilkan enam tingkat Taksonomi Bloom, mulai dari basis "Mengingat" hingga puncak "Mencipta", untuk menggambarkan kedalaman pemrosesan kognitif yang diperlukan dalam sistem cerdas. | |
+
+## 2.3 Menerjemahkan Tingkat Kognitif menjadi Elemen Peta
+
+Transformasi peta statis menjadi mesin logika yang dapat dieksekusi terjadi ketika elemen-elemen peta diterjemahkan sesuai dengan kedalaman kognitif Taksonomi Bloom.
+
+**Tabel 2.1: Pemetaan Tingkat Kognitif Bloom ke Elemen Pemetaan Pengetahuan**
+
+| Tingkat Bloom | Fungsi Kognitif | Elemen Peta (Aksi Pemetaan) | Contoh Elemen Peta | Sumber |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Mengingat** | Mengingat fakta dasar. | **Node Terisolasi/Titik Data** | Kata tunggal, definisi, atau fakta yang ditempatkan di pusat atau dasar peta. | |
+| **2. Memahami** | Menjelaskan konsep dan konteks. | **Koneksi Berlabel (Proposisi)** | Garis pendek yang menghubungkan Node Level 1, harus diberi label untuk menjelaskan hubungan (misalnya, *berinteraksi untuk menentukan harga*). | |
+| **3. Mengaplikasikan** | Menggunakan informasi dalam situasi baru. | **Pengelompokan/Kluster** | Batas visual yang mengelilingi sekelompok *node* untuk menunjukkan konteks penggunaan tertentu (misalnya, *Mekanisme Pasar*). | |
+| **4. Menganalisis** | Menarik hubungan dan pola antar ide. | **Tautan Silang (*Cross-Links*)** | Garis putus-putus atau berbeda warna yang memotong hierarki, menghubungkan cabang peta yang berbeda dan tampaknya tidak terkait. | |
+| **5. Mengevaluasi** | Menilai kualitas, validitas, dan nilai. | **Anotasi Visual** | Penanda visual seperti kode warna atau ikon (*sticky note*) yang digunakan untuk menunjukkan kritik, kontradiksi, atau penilaian (*Contested Theory*). | |
+| **6. Mencipta** | Menghasilkan model atau hipotesis baru. | **Cabang Baru/Restrukturisasi** | Bagian peta yang sama sekali baru, menyusun ulang elemen yang ada dengan cara yang orisinal untuk mengusulkan model baru (misalnya, *Ekonomi Berkelanjutan*). | |
+
+Tautan silang (Level 4, Menganalisis) mewakili pemahaman mendalam karena memecah hierarki linier. Peta yang hanya mengandung kata-kata adalah peta Mengingat, tetapi peta yang mengandung tautan berlabel yang menghubungkan konsep jauh adalah peta Menganalisis dan Mencipta.
+
+## 2.4 Metafora Visual untuk Kedalaman: Pohon Pengetahuan dan Bawang
+
+Untuk lebih memahami representasi kedalaman kognitif pada peta, dua metafora visual dapat digunakan: Pohon Pengetahuan dan Bawang.
+
+### A. Pohon Pengetahuan (Hierarki Vertikal)
+Peta ini memvisualisasikan pengetahuan sebagai entitas organik dengan hierarki vertikal:
+*   **Akar** merepresentasikan fakta atau data (Mengingat).
+*   **Batang** merepresentasikan konsep utama (Memahami).
+*   **Cabang** merepresentasikan aplikasi konsep (Mengaplikasikan).
+*   **Penyerbukan Silang** (Sistem sulur) menghubungkan cabang yang berbeda, melambangkan **Menganalisis**.
+*   **Buah** yang dihasilkan merepresentasikan ide-ide baru (Mencipta).
+
+### B. Bawang (Peta Konsentris)
+Metafora ini sangat sesuai untuk sistem cerdas atau sistem yang dapat ditransfer (*transferable knowledge systems*) karena menekankan lapisan pemikiran. Kedalaman meningkat saat bergerak dari luar ke pusat:
+*   **Inti Tengah** berisi definisi kunci (Mengingat).
+*   **Cincin Pertama** berisi hubungan dan proses (Memahami).
+*   **Cincin Kedua** berisi konteks aplikasi (Mengaplikasikan).
+*   **Cincin Luar** berisi tautan ke sistem eksternal (Menganalisis/Mengevaluasi).
+
+**Usulan Gambar 2.2: Dualitas Metafora Visual untuk Kedalaman Kognitif**
+
+| Placeholder Gambar | Caption | Sumber |
+| :--- | :--- | :--- |
+| **Gambar 2.2** | Diagram berdampingan yang menunjukkan (A) Metafora Pohon Pengetahuan (dengan Akar, Batang, Cabang, dan Buah) dan (B) Metafora Bawang (dengan lapisan konsentris), keduanya berlabel dengan tingkat Taksonomi Bloom untuk memvisualisasikan bagaimana kedalaman kognitif direpresentasikan dalam arsitektur peta. | |
+
+Melalui pemetaan yang ketat berdasarkan Taksonomi Bloom, peta pengetahuan bergerak melampaui sekadar menunjukkan *apa* yang diketahui, menjadi representasi yang dapat mengukur *seberapa dalam* sistem memahami, yang merupakan prasyarat penting sebelum kita dapat memetakan tindakan.

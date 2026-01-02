@@ -7,6 +7,9 @@
 \textclass LyxBook
 \begin_preamble
 \usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
 \end_preamble
 \use_default_options true
 \begin_removed_modules
@@ -113,6 +116,65 @@ status open
 
 \backslash
 includepdf[pages={1}]{BinderKM.pdf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Pendahuluan
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth,page=1]{BinderKM.pdf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Peta-Pengetahuan"
+
+\end_inset
+
+Peta Pengetahuan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
